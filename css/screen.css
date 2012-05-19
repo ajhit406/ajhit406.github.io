@@ -30,8 +30,13 @@ body {
   color: #000000;
 }
 
+section[role="main"] {
+	margin: 0 auto;
+	width: 90%;
+}
+
 /* Typography =================================================== */
-h1,h2,h3,h4,h5,h6 {margin: 0;font-family: inherit;font-weight: bold;color: inherit;text-rendering: optimizelegibility;}
+h1,h2,h3,h4,h5,h6 {margin: 0;font-family: 'Rokkitt', serif;font-weight: bold;color: inherit;text-rendering: optimizelegibility;}
 h1 {margin-bottom: 0.75em;font-size: 32px;font-size: 3.2rem;line-height: 1.2;}
 h2 {margin-bottom: 0.75em;font-size: 24px;font-size: 2.4rem;line-height: 1.2;}
 h3 {margin-bottom: 1em;font-size: 21px;font-size: 2.1rem;line-height: 1.3;}
@@ -161,18 +166,20 @@ input[type="submit"].btn:hover {border-color: #cccccc;}
 .btn-disabled {-webkit-opacity: 0.5;-moz-opacity: 0.5;opacity: 0.5;cursor: default;}
 
 /* Banner =================================================== */
-[role="banner"] {margin: 0 auto;padding-top: 1.5em;width: 90%;}
+[role="banner"] {padding: 1.5em 0;margin-bottom: 1.5em;background: #eee;}
 
 /* Navigation =================================================== */
-[role="navigation"] {margin: 0 auto 1.5em;width: 90%;background-color: #586879;border: 1px solid #4d5b6a;}
+[role="navigation"] {margin: 0 auto;width: 90%;display: block;}
 [role="navigation"] p {margin-bottom: 0;padding: 6px 11px;color: #ffffff;}
-[role="navigation"] a {color: #ffffff;}
+[role="navigation"] a {color: #111;font-size:1.5em;font-family: 'Rokkitt', serif;}
 
 /* Content =================================================== */
 .content {margin: 0 auto;width: 90%;}
 
 /* contentinfo =================================================== */
-[role="contentinfo"] {padding: 1.5em 0;border-top: 3px solid #c7ced6;}
+[role="contentinfo"] {padding: 1.5em 0;border-top: 3px solid #c7ced6;margin: 0 auto;width: 90%;}
+footer[role="contentinfo"] {color: #aaa;font-family: 'Rokkitt', serif;font-size:1.25em;}
+footer[role="contentinfo"] a {color: #aaa;}
 [role="contentinfo"] small {display: block;margin: 0 auto 1.5em;width: 90%;}
 
 @media print {
@@ -209,7 +216,6 @@ input[type="submit"].btn:hover {border-color: #cccccc;}
     visibility: hidden;
   }
   [role="navigation"] {
-    display: table-header-group;
   }
   [role="navigation"] p {
     margin: 0 auto;
