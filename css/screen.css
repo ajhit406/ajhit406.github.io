@@ -47,7 +47,7 @@ p,ol,ul,dl,address {margin-bottom: 1.5em;font-size: 14px;font-size: 1.4rem;line-
 small {font-size: 14px;font-size: 1.4rem;}
 ul,ol {margin: 0 0 1.5em -24px;padding: 0 0 0 24px;}
 li ul, li ol {margin: 0;font-size: 16px;font-size: 1.6rem;}
-blockquote {margin: 0 0 1.5em -24px;padding-left: 24px;border-left: 2px solid #c7ced6;font-family: Cambria, Georgia, Times, "Times New Roman";font-style: normal;}
+blockquote {margin: 0 0 1.5em -24px;padding-left: 24px;border-left: 2px solid #c7ced6;font-family: Cambria, Georgia, Times, "Times New Roman";font-style: normal;color: #555;}
 q {quotes: none;}
 blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
 cite {font-style: normal;}
@@ -176,9 +176,12 @@ input[type="submit"].btn:hover {border-color: #cccccc;}
 /* Content =================================================== */
 .content {margin: 0 auto;width: 90%;}
 
+ul#essays {list-style: none;}
+ul#essays li span {color: #bbb;}
+
 /* contentinfo =================================================== */
 [role="contentinfo"] {padding: 1.5em 0;border-top: 3px solid #c7ced6;margin: 0 auto;width: 90%;}
-footer[role="contentinfo"] {color: #aaa;font-family: 'Rokkitt', serif;font-size:1.25em;}
+footer[role="contentinfo"] {color: #aaa;font-family: 'Rokkitt', serif;font-size:1em;}
 footer[role="contentinfo"] a {color: #aaa;}
 [role="contentinfo"] small {display: block;margin: 0 auto 1.5em;width: 90%;}
 
@@ -224,6 +227,7 @@ footer[role="contentinfo"] a {color: #aaa;}
 }
 @media only screen and (min-width: 992px) {
   /* 992 =================================================== */
+	img {float: right; margin-left: 1.5em;border: 1px solid #ddd;padding: .5em;}
 }
 @media only screen and (min-width: 1382px) {
   /* 1382 =================================================== */
