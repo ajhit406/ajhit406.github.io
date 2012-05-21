@@ -31,8 +31,8 @@ body {
 }
 
 section[role="main"] {
-	margin: 0 auto;
-	width: 90%;
+  margin: 0 auto;
+  width: 90%;
 }
 
 /* Typography =================================================== */
@@ -64,9 +64,9 @@ sup {top: -0.5em;}
 sub {bottom: -0.25em;}
 
 /* Color =================================================== */
-a {text-decoration: none;color: #013568;}
+a {text-decoration: underline;color: #000203;}
 a:visited {color: #000203;}
-a:hover {text-decoration: underline;color: #011b35;}
+a:hover {text-decoration: underline;color: #ff8800;}
 a:focus {outline: thin dotted;color: #000000;}
 a:hover, a:active {outline: 0;}
 ::-moz-selection {background-color: #d6dbe1;color: #2d353e;text-shadow: none;}
@@ -166,12 +166,19 @@ input[type="submit"].btn:hover {border-color: #cccccc;}
 .btn-disabled {-webkit-opacity: 0.5;-moz-opacity: 0.5;opacity: 0.5;cursor: default;}
 
 /* Banner =================================================== */
-[role="banner"] {padding: 1.5em 0;margin-bottom: 1.5em;background: #eee;}
+[role="banner"] {padding: 1.5em 0 0;margin-bottom: 1.5em;background: #eee;}
 
 /* Navigation =================================================== */
-[role="navigation"] {margin: 0 auto;width: 90%;display: block;}
+[role="navigation"] {margin: 0 auto;width: 100%;display: block;}
 [role="navigation"] p {margin-bottom: 0;padding: 6px 11px;color: #ffffff;}
-[role="navigation"] a {color: #111;font-size:1.5em;font-family: 'Rokkitt', serif;}
+[role="navigation"] a {color: #111;font-family: 'Rokkitt', serif;text-decoration: none;}
+[role="navigation"] a#home {padding: 0;width: 90%;margin: 0 auto;display: block;font-size: 2em;}
+[role="navigation"] ul.links {list-style: none;margin-top: 1em;margin-bottom: 0;}
+[role="navigation"] ul.links li {margin: 0 0 7px;background: #e3e3e3;}
+[role="navigation"] ul.links li:hover {background: #ff8800;color: #ffffff;}
+[role="navigation"] ul.links li:last-child {margin-bottom: 0;}
+[role="navigation"] ul.links li a {padding: 7px 0;display: block;width: 90%;margin: 0 auto;font-size:1.4em;}
+[role="navigation"] ul.links li a:hover {text-decoration: none;color: #fff;}
 
 /* Content =================================================== */
 .content {margin: 0 auto;width: 90%;}
@@ -181,9 +188,11 @@ ul#essays li span {color: #bbb;}
 
 /* contentinfo =================================================== */
 [role="contentinfo"] {padding: 1.5em 0;border-top: 3px solid #c7ced6;margin: 0 auto;width: 90%;}
-footer[role="contentinfo"] {color: #aaa;font-family: 'Rokkitt', serif;font-size:1em;}
-footer[role="contentinfo"] a {color: #aaa;}
+footer[role="contentinfo"] {color: #ccc;font-family: 'Rokkitt', serif;font-size:1em;}
+footer[role="contentinfo"] a {color: #ccc;}
+footer[role="contentinfo"] a:hover {color: #001122;}
 [role="contentinfo"] small {display: block;margin: 0 auto 1.5em;width: 90%;}
+footer[role="contentinfo"] span#feeds {float: right;}
 
 @media print {
   /* Print =================================================== */
@@ -214,20 +223,17 @@ footer[role="contentinfo"] a {color: #aaa;}
     display: table;
     border-collapse: collapse;
   }
-  [role="banner"] a[href="#navigation"] {
-    display: none !important;
-    visibility: hidden;
-  }
-  [role="navigation"] {
-  }
-  [role="navigation"] p {
-    margin: 0 auto;
-    width: 90%;
-  }
+
+  [role="banner"] {display: block;top:0;left:0;bottom:0;left:0;position: absolute; width: 30%;min-height:auto;}
+  [role="banner"] a[href="#navigation"] { display: none !important;visibility: hidden;}
+  [role="navigation"] ul.links li {margin: 0 0 7px;background: #eee;}
+  section[role="main"] { margin-top: 1.5em;min-height: 400px;}
+  section[role="main"], footer[role="contentinfo"] {width: 55%;margin-left:35%;}
+
 }
 @media only screen and (min-width: 992px) {
   /* 992 =================================================== */
-	img {float: right; margin-left: 1.5em;border: 1px solid #ddd;padding: .5em;}
+  section[role="main] img {float: right; margin-left: 1.5em;border: 1px solid #ddd;padding: .5em;}
 }
 @media only screen and (min-width: 1382px) {
   /* 1382 =================================================== */
