@@ -58,7 +58,7 @@ sub {bottom: -0.25em;}
 /* Color =================================================== */
 a {text-decoration: underline;color: #000203;}
 a:visited {color: #000203;}
-a:hover {text-decoration: underline;color: #ff8800;}
+a:hover {text-decoration: underline;color: #0033aa;}
 a:focus {outline: thin dotted;color: #000000;}
 a:hover, a:active {outline: 0;}
 ::-moz-selection {background-color: #d6dbe1;color: #2d353e;text-shadow: none;}
@@ -157,7 +157,7 @@ input[type="submit"].btn:hover {border-color: #cccccc;}
 .btn-disabled {-webkit-opacity: 0.5;-moz-opacity: 0.5;opacity: 0.5;cursor: default;}
 
 /* Banner =================================================== */
-[role="banner"] {padding: 1.5em 0 0;margin-bottom: 1.5em;background: #eee;}
+[role="banner"] {padding: 1.5em 0 0;margin-bottom: 1.5em;background: #eee url('../images/nyc-w.jpeg') 0 no-repeat;min-height:60px;background-size: 100% auto;}
 
 /* Navigation =================================================== */
 [role="navigation"] {margin: 0 auto;width: 100%;display: block;}
@@ -166,17 +166,17 @@ input[type="submit"].btn:hover {border-color: #cccccc;}
 [role="navigation"] a#home {padding: 0;width: 90%;margin: 0 auto;display: block;font-size: 2em;}
 [role="navigation"] a#home:hover {text-decoration:underline;}
 [role="navigation"] ul.links {list-style: none;margin-top: 1em;margin-bottom: 0;}
-[role="navigation"] ul.links li {margin: 0 0 7px;background: #e3e3e3;}
-[role="navigation"] ul.links li:hover {background: #ff8800;color: #ffffff;}
+[role="navigation"] ul.links li {margin: 0 0 7px;background:rgba(255,255,255,0.4)}
 [role="navigation"] ul.links li:last-child {margin-bottom: 0;}
-[role="navigation"] ul.links li a {padding: 7px 0;display: block;width: 90%;margin: 0 auto;font-size:1.4em;}
-[role="navigation"] ul.links li a:hover {text-decoration: none;color: #fff;}
+[role="navigation"] ul.links li a {color: #404040;padding: 7px 0;display: block;width: 90%;margin: 0 auto;font-size:1.4em;}
+[role="navigation"] ul.links li a:hover {color: #000;}
 
 /* Content =================================================== */
 .content {margin: 0 auto;width: 90%;}
 
 ul#essays {list-style: none;}
-ul#essays li span {color: #bbb;}
+ul#essays li {margin: 5px 0}
+ul#essays li span {color: #bbb;display:inline-block;width:120px;}
 
 #share-buttons { }
 #share-buttons:after { content: "."; clear: both;}
@@ -207,16 +207,21 @@ footer[role="contentinfo"] span#feeds {float: right;}
 }
 
 .vh320 {display:none;}
+.vh480 {display:none}
+.vh600 {display:none;}
 
 @media only screen and (min-width: 480px) {
   .vh320 {display:block;}
   /* 480 =================================================== */
 }
 @media only screen and (min-width: 600px) {
+  .vh480 {display:block;}
   /* 600 =================================================== */
 }
 @media only screen and (min-width: 768px) {
+  [role="banner"] {background-image: url('../images/nyc-t.jpeg');background-size: auto 100%;}
   /* 768 =================================================== */
+  .vh600 {display: block;}
   body {
     display: table;
     border-collapse: collapse;
@@ -224,8 +229,9 @@ footer[role="contentinfo"] span#feeds {float: right;}
 
   [role="banner"] {padding-top:1.95em;display: block;top:0;left:0;bottom:0;left:0;position:fixed;margin-bottom:0;width: 20%;min-height:auto;text-align: right;}
   [role="banner"] a[href="#navigation"] { display: none !important;visibility: hidden;}
-  [role="navigation"] ul.links li {margin: 0 0 7px;background: #eee;}
-  [role="navigation"] ul.links li a {padding-right:15px;}
+  [role="navigation"] ul.links li {margin: 0 0 7px;background:rgba(255,255,255,0.5)}
+  [role="navigation"] ul.links li a {padding-right:15px;color: #777}
+  [role="navigation"] ul.links li a.active {color: #000;}
   section[role="main"] { margin-top: 1.5em;min-height: 400px;}
   section[role="main"], footer[role="contentinfo"] {width: 65%;margin-left:25%;}
 
