@@ -2,8 +2,13 @@
 layout: default
 lnav: essays
 ---
+
 <div id="post">
-{{ content }}
+  {% if post.draft %}
+    <div class="notice"> You've somehow stumbled upon a draft. This content is not available yet!</div>
+  {% else %}
+    {{ content }}
+  {% endif %}
 </div>
 
 {% include sharing.html %}
