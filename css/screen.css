@@ -9,17 +9,20 @@ article,aside,figure,footer,header,hgroup,nav,section {display: block;}
 .clearfix:after {clear: both;}
 .visuallyhidden.focusable:active,.visuallyhidden.focusable:focus {position: static;clip: auto;height: auto;width: auto;margin: 0;overflow: visible;}
 /* Page =================================================== */
-html {background: #ffffff;font-size: 62.5%;-webkit-overflow-scrolling: touch;-webkit-tap-highlight-color: #f3f5f6;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
+html {background: #faf5f3 url('../images/pattern.png') 0 repeat;font-size: 62.5%;-webkit-overflow-scrolling: touch;-webkit-tap-highlight-color: #f3f5f6;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   background-color: transparent;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-image: url('../images/pattern.png') ;
+  background-position: 0;
+  background-repeat: repeat;
+  font-family: Palantino Roman, Georgia, Cambria, serif;
   font-size: 16px;
   font-size: 1.6rem;
-  line-height: 1.5em;
-  color: #333333;
+  line-height: 1.8em;
+  color: #181818;
 }
 
 section[role="main"] {
@@ -28,14 +31,14 @@ section[role="main"] {
 }
 
 /* Typography =================================================== */
-h1,h2,h3,h4,h5,h6 {margin: 0;font-family: 'Rokkitt', serif;font-weight: bold;color: inherit;text-rendering: optimizelegibility;}
-h1 {margin-bottom: 0.5em;font-size: 32px;font-size: 3.2rem;line-height: 1.2;}
-h2 {margin-bottom: 0.5em;font-size: 24px;font-size: 2.4rem;line-height: 1.2;}
-h3 {margin-bottom: 1em;font-size: 21px;font-size: 2.1rem;line-height: 1.3;}
-h4 {margin-bottom: 1.5em;font-size: 18px;font-size: 1.8rem;line-height: 1.25;}
+h1,h2,h3,h4,h5,h6 {margin: 0;font-family: Palantino Roman, Georgia, Cambria, serif;font-weight: bold;color: inherit;text-rendering: optimizelegibility;}
+h1 {margin-bottom: 0.5em;font-size: 28px;font-size: 2.6rem;line-height: 1.2;}
+h2 {margin-bottom: 0.5em;font-size: 20px;font-size: 2.0rem;line-height: 1.2;}
+h3 {margin-bottom: 1em;font-size: 18px;font-size: 1.7rem;line-height: 1.3;}
+h4 {margin-bottom: 1.5em;font-size: 18px;font-size: 1.7rem;line-height: 1.25;}
 h5 {font-size: 16px;font-size: 1.6rem;margin-bottom: 1.5em;}
 h6 {margin-bottom: 1.5em;font-size: 14px;font-size: 1.4rem;font-weight: normal;letter-spacing: 1px;text-transform: uppercase;}
-p,ol,ul,dl,address {margin-bottom: 1.5em;font-size: 14px;font-size: 1.4rem;line-height: 1.5em;}
+p,ol,ul,dl,address {margin-bottom: 1.5em;font-size: 16px;font-size: 1.6rem;line-height: 1.5em;}
 small {font-size: 14px;font-size: 1.4rem;}
 ul,ol {margin: 0 0 1.5em -24px;padding: 0 0 0 24px;}
 li ul, li ol {margin: 0;font-size: 16px;font-size: 1.6rem;}
@@ -157,7 +160,9 @@ input[type="submit"].btn:hover {border-color: #cccccc;}
 .btn-disabled {-webkit-opacity: 0.5;-moz-opacity: 0.5;opacity: 0.5;cursor: default;}
 
 /* Banner =================================================== */
-[role="banner"] {padding: 1.5em 0 0;margin-bottom: 1.5em;background: #eee url('../images/nyc-w.jpeg') 0 no-repeat;min-height:60px;background-size: 100% auto;}
+[role="banner"] {border-bottom:1px solid #ccc;position:fixed;width:100%;padding: 1.5em 0 0;margin-bottom: 1.5em;background: url('../images/pattern.png') 0 repeat;min-height:35px;}
+
+#hoverlay[role="banner"].active {-webkit-box-shadow:0 1px 12px rgba(0,0,0,0.5);-moz-box-shadow:0 1px 12px rgba(0,0,0,0.3);box-shadow:0 1px 12px rgba(0,0,0,0.3);-webkit-transition: all 0.8s ease;-moz-transition: all 0.8s ease;}
 
 /* Navigation =================================================== */
 [role="navigation"] {margin: 0 auto;width: 100%;display: block;}
@@ -173,6 +178,8 @@ input[type="submit"].btn:hover {border-color: #cccccc;}
 
 /* Content =================================================== */
 .content {margin: 0 auto;width: 90%;}
+
+#content {padding-top: 88px;}
 
 ul#essays {list-style: none;}
 ul#essays li {margin: 5px 0}
@@ -212,6 +219,10 @@ footer[role="contentinfo"] span#feeds {float: right;}
 
 @media only screen and (min-width: 480px) {
   .vh320 {display:block;}
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
   /* 480 =================================================== */
 }
 @media only screen and (min-width: 600px) {
@@ -220,12 +231,22 @@ footer[role="contentinfo"] span#feeds {float: right;}
 }
 @media only screen and (min-width: 768px) {
   [role="banner"] {background-image: url('../images/nyc-t.jpeg');background-size: auto 100%;}
+   #hoverlay[role="banner"].active {-webkit-box-shadow: none;border: none;}
+
+   h1 {font-size: 3.2rem;}
+   h2 {font-size: 2.8rem;}
+   h3 {font-size: 2.2rem;}
+   h4 {font-size: 1.8rem;}
+
   /* 768 =================================================== */
   .vh600 {display: block;}
   body {
     display: table;
     border-collapse: collapse;
   }
+
+  #content {padding-top: 0;}
+
 
   [role="banner"] {padding-top:1.95em;display: block;top:0;left:0;bottom:0;left:0;position:fixed;margin-bottom:0;width: 20%;min-height:auto;text-align: right;}
   [role="banner"] a[href="#navigation"] { display: none !important;visibility: hidden;}
