@@ -181,12 +181,16 @@ input[type="submit"].btn:hover {border-color: #cccccc;}
 
 #content {padding-top: 88px;}
 
+p.post-date {color: #a8a8a8;font-size:1.5rem;font-weight:normal;}
+
 ul#essays {list-style: none;}
 ul#essays li {margin: 5px 0}
 ul#essays li span {color: #bbb;display:inline-block;width:120px;}
+ul#essays li a {}
 
 #share-buttons { }
 #share-buttons:after { content: "."; clear: both;}
+#plusone {width: 180px;}
 
 /* contentinfo =================================================== */
 [role="contentinfo"] {padding: 1.5em 0;border-top: 3px solid #c7ced6;margin: 1em auto 0;width: 90%;}

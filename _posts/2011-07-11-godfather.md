@@ -3,8 +3,6 @@ layout: post
 title: Why Startups Win
 ---
 
-#{{page.title}}
-
 ![Don Corleone](/images/corleone.png)
 
 This quote from The Godfather II is a great example of why it is startups who disrupt industries. There are few things stronger than passion and the will to succeed.
