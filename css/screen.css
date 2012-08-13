@@ -176,6 +176,12 @@ input[type="submit"].btn:hover {border-color: #cccccc;}
 [role="navigation"] ul.links li a {color: #404040;padding: 7px 0;display: block;width: 90%;margin: 0 auto;font-size:1.4em;}
 [role="navigation"] ul.links li a:hover {color: #000;}
 
+#post-nav {display:block;padding:8px 0 0;}
+#post-nav .older {float:right;}
+#post-nav .older a {}
+#post-nav .older a:hover {}
+#post-nav .newer a {}
+
 /* Content =================================================== */
 .content {margin: 0 auto;width: 90%;}
 
