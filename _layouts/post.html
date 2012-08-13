@@ -21,6 +21,16 @@ lnav: essays
 
 {% include sharing.html %}
 
+<div id="post-nav" class="clearfix">
+  {% if page.previous.url %}
+    <div class="older"><a href="{{page.previous.url}}" title="Older">Older Posts &raquo;</a></div>
+  {% endif %}
+
+  {% if page.next.url %}
+    <div class="newer"><a href="{{page.next.url}}" title="Newer">&laquo; Newer Posts</a></div>
+  {% endif %}
+</div>
+
 {% if site.related_posts.count > 0 %}
 <div id="related">
   <h2>Related Posts</h2>
