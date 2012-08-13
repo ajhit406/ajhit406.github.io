@@ -5,7 +5,7 @@ title: Foundermetrics
 
 ![Yahoo! 404](/images/yahoo.jpg)
 
-I'm sure many of you have heard of [Moneyball](http://en.wikipedia.org/wiki/Moneyball), Michael Lewis' 2003 best-seller that was recently the basis of a [Major Motion Picture](http://www.imdb.com/title/tt1210166/). The book details the selection process of professional baseball prospects, and how the traditional methods of scouting have given way to an increasingly mathematical analysis of player performance known in the baseball world as [**Sabermetrics**](http://en.wikipedia.org/wiki/Sabermetrics).
+I'm sure many of you have heard of [Moneyball](http://www.amazon.com/gp/product/B005G5PPGS/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B005G5PPGS&linkCode=as2&tag=hitting406-20), Michael Lewis' 2003 best-seller that was recently the basis of a [Major Motion Picture](http://www.imdb.com/title/tt1210166/). The book details the selection process of professional baseball prospects, and how the traditional methods of scouting have given way to an increasingly mathematical analysis of player performance known in the baseball world as [**Sabermetrics**](http://en.wikipedia.org/wiki/Sabermetrics).
 
 Historically, baseball scouts focused primarily on physical stature to predict future success. Scouts used physical prowess as an indicator of any of "5-tools": the ability to run, hit (average), hit for power, throw and field. They assumed that if a player looked like a superstar athlete, then, even if he wasn't, they could eventually mold him into one.
 
