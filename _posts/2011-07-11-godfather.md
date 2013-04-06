@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why Startups Win
+title: Why startups win
 ---
 
 ![Don Corleone](/images/corleone.png)

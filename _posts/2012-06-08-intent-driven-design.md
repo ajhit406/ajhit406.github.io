@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Intent Driven Design
+title: Intent driven design
 ---
 
 I used to be a URL fanatic. I used to type every web address I visited letter by letter. I used to yell at my parents for opening Yahoo and searching for "Hotmail" in the big search box instead of just typing "www.hotmail.com".
