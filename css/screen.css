@@ -197,7 +197,7 @@ input[type="submit"].btn:hover {border-color: #cccccc;}
 #post-nav .older a:hover {}
 #post-nav .newer a {}
 
-.followme {margin: 0 -35px 1.5em;background: #e3e3e3;padding: 10px 35px;}
+.followme {margin: 0 -19px 1.5em;background: #e3e3e3;padding: 10px 19px;}
 
 /* Content =================================================== */
 .content {margin: 0 auto;width: 90%;}
@@ -275,8 +275,8 @@ ul.stats li .label {
 }
 
 /* contentinfo =================================================== */
-[role="contentinfo"] {padding: 1.5em 0;border-top: 3px solid #c7ced6;margin: 1em auto 0;width: 90%;}
-footer[role="contentinfo"] {color: #ccc;font-family: 'Rokkitt', serif;font-size:1em;}
+[role="contentinfo"] {padding: 1.5em 0;border-top: 3px solid #c7ced6;margin: 1em auto 0;width: 90%;line-height:1.5em;}
+footer[role="contentinfo"] {color: #ccc;font-family: 'Rokkitt', serif;font-size:1em;line-height:1.5em;}
 footer[role="contentinfo"] a {color: #ccc;}
 footer[role="contentinfo"] a:hover {color: #001122;}
 [role="contentinfo"] small {display: block;margin: 0 auto 1.5em;width: 90%;}
@@ -347,6 +347,7 @@ footer[role="contentinfo"] span#feeds {float: right;}
   [role="navigation"] ul.links li a.active {color: #000;}
   section[role="main"] { margin-top: 1.6em;min-height: 400px;}
   section[role="main"], footer[role="contentinfo"] {width: 65%;margin-left:25%;}
+  footer[role="contentinfo"] {line-height:1.5em;}
 
   .followme {margin: 0 -15px 1.5em;padding:10px 15px;}
 }
