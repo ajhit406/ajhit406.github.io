@@ -129,6 +129,16 @@ input[type="file"]:focus,input[type="radio"]:focus,input[type="checkbox"]:focus,
 ::-webkit-input-placeholder {font-size: 14px;font-size: 1.4rem;}
 input:-moz-placeholder {font-size: 14px;font-size: 1.4rem;}
 
+pre { 
+  margin: 0 0 1.667em;
+  background-color: #112;
+  padding: 20px 15px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  color: #fff;
+}
+
 /* Buttons =================================================== */
 .btn {
   display: inline-block;
