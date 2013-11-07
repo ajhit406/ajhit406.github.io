@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Start hacking on discourse in 60 seconds
+title: Start hacking on Discourse in 3 minutes
 ---
 
 [Discourse](https://www.discourse.org) is a powerful, open source forum application built on top of [ruby on rails](https://www.rubyonrails.org) & [ember.js](https://www.emberjs.com).  
@@ -9,21 +9,21 @@ After playing around with [some sites](https://discussion.heroku.com/) [already 
 
 ## Setting up the Development Environment
 
-Discourse is a robust application with a lot of moving parts.  The Discourse Docs suggest Vagrant, but Vagrant seems like overkill as I don't want to install VirtualBox and Vagrant on my machine and take hours downloading and installing the required software.  Vagrant is a great tool, but the separate images take up too much space on my SSD and running vagrant takes too long.
+Discourse is a robust application with a lot of moving parts.  The Discourse Docs suggest using Vagrant for development, but Vagrant seems like overkill as I don't want to install VirtualBox and Vagrant on my machine and take hours downloading and installing the required software.  Vagrant is a great tool, but the separate images take up too much space on my SSD and setting up the VM takes too long.  For this tutorial I'm going to use [Nitrous.IO](https://www.nitrous.io/) which hosts free, pre-configured development environments in the cloud (I also help build it).
 
 ## 1. Create a new box
 
-Discourse runs multiple services and consumes a fair bit of RAM and storage.  I'm going to boot up a box on [Nitrous.IO](https://www.nitrous.io) with 768MB of RAM and 1.5GB of storage to get me started.  Discourse recommends [2 GB of RAM](https://github.com/ajhit406/discourse/blob/master/docs/INSTALL-ubuntu.md) but I'll try this configuration out for my development. I can always allocate additional resources on [Nitrous.IO](https://www.nitrous.io/) later.
+Discourse runs multiple services and consumes a fair bit of RAM and storage.  I'm going to boot up a box on with 768MB of RAM and 1.5GB of storage to get me started.  Discourse recommends [2 GB of RAM](https://github.com/ajhit406/discourse/blob/master/docs/INSTALL-ubuntu.md) and I would recommend you use at least 1GB RAM if possible, but I'm going to try this configuration out. I can always allocate additional resources on [Nitrous.IO](https://www.nitrous.io/) later.
 
 ![New Box](/images/new-box.png)
 
 ## 2. Fork Discourse
 
-If you want to do any customizing of discourse (why wouldn't you?), you'll want to fork the discourse repo. 
+If you want to do any customizing of discourse (why wouldn't you?), you'll want to fork the discourse repo:
 
 [Click here to Fork Discourse](https://github.com/discourse/discourse/fork)
 
-Once you've forked the repo, you can jump into the Nitrous.IO IDE and clone it to your box. 
+Once you've forked the repo, you can jump into the Nitrous.IO IDE and clone discourse to your Nitrous box. 
 
 ![Clone Discourse](/images/cloned.png)
 
@@ -106,4 +106,4 @@ And we have square corners on all the topic lists.  Very web 3.0, if I don't say
 
 ![Sharp edges](/images/new-icon.png)
 
-That was easy.  Stay tuned to [@nitrousio](https://www.twitter.com/nitrousio), we've got an even easier way to install discourse that is going to blow your mind.  
+That was easy.
