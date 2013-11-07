@@ -29,7 +29,7 @@ Once you've forked the repo, you can jump into the Nitrous.IO IDE and clone disc
 
 ## 3. Install Dependencies
 
-Next we'll use the Nitrous.IO [Autoparts](http://blog.nitrous.io/2013/09/18/introducing-autoparts-for-nitrous-io.html) package manager to install redis & postgres.  This is as easy as running: 
+Next we'll use the Nitrous.IO [Autoparts](http://blog.nitrous.io/2013/09/18/introducing-autoparts-for-nitrous-io.html) package manager to install redis & postgres.  This is as easy as running:
 
     parts install redis
     parts start redis

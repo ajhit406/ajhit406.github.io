@@ -139,6 +139,21 @@ pre {
   color: #fff;
 }
 
+code {
+  padding: 2px 4px;
+  color: #c7254e;
+  background-color: #e3e5e9;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+pre code {
+  color: #fff;
+  background-color: transparent;
+  padding: 0;
+}
+
 /* Buttons =================================================== */
 .btn {
   display: inline-block;
