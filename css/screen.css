@@ -364,7 +364,6 @@ footer[role="contentinfo"] span#feeds {float: right;}
 
 @media only screen and (min-width: 992px) {
   /* 992 =================================================== */
-  section[role="main"] img {float: right; margin-left: 1.5em;border: 1px solid #ddd;padding: .5em;}
   [role="banner"] {max-width: 320px}
 }
 
