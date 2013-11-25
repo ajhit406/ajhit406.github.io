@@ -21,6 +21,10 @@ I'm not visiting Flight Tracker, I'm searching **"SQ21"** and getting this:
 
 ![singapore air flt. 21](/images/2012-06-08-sq.png)
 
+Gmail even recently started including rich markup when they identified flight information in my email:
+
+![flight info in gmail](/images/flight-info.png)
+
 Less clicks, more information, standardized format.
 
 ## Microformats
