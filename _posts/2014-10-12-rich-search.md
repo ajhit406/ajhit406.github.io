@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rich Search
+title: Rich Search Results
 terms:
   - name: "Search = 'btc'"
     image: btc
