@@ -129,7 +129,7 @@ input[type="file"]:focus,input[type="radio"]:focus,input[type="checkbox"]:focus,
 ::-webkit-input-placeholder {font-size: 14px;font-size: 1.4rem;}
 input:-moz-placeholder {font-size: 14px;font-size: 1.4rem;}
 
-pre { 
+pre {
   margin: 0 0 1.667em;
   background-color: #112;
   padding: 20px 15px;
@@ -239,6 +239,11 @@ ul#essays li .post-title {margin-left:110px;}
 #share-buttons { }
 #share-buttons:after { content: "."; clear: both;}
 #plusone {width: 180px;}
+
+.rsr-img-list img {
+  border: 1px solid #ccc;
+  margin-bottom: 1.375em
+}
 
 aside.media {
   width: 280px;
