@@ -1,5 +1,4 @@
-auto: true
-pygments: true
+highlighter: 'pygments'
 markdown: rdiscount
 exclude:
 - README.md
