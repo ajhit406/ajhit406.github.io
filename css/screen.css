@@ -23,9 +23,9 @@ body {
   padding: 0;
   width: 100%;
   background-color: transparent;
-  background-image: url('../images/pattern.png') ;
+  /* background-image: url('../images/pattern.png');
   background-position: 0;
-  background-repeat: repeat;
+  background-repeat: repeat; */
   font-family: Palantino Roman, Georgia, Cambria, serif;
   font-size: 18px;
   font-size: 1.8rem;
@@ -186,6 +186,7 @@ pre code {
   cursor: pointer;
   *margin-left: .3em;
 }
+
 .btn:visited,.btn:hover {color: #404040;text-decoration: none;border-color: #aaa;}
 .btn:active {-webkit-box-shadow:inset 0 0 7px 1px rgba(0,0,0,0.3);-moz-box-shadow:inset 0 0 7px 1px rgba(0,0,0,0.3);box-shadow:inset 0 0 7px 1px rgba(0,0,0,0.3);}
 input[type="submit"].btn:hover {border-color: #cccccc;}
@@ -193,9 +194,22 @@ input[type="submit"].btn:hover {border-color: #cccccc;}
 .btn-disabled {-webkit-opacity: 0.5;-moz-opacity: 0.5;opacity: 0.5;cursor: default;}
 
 /* Banner =================================================== */
-[role="banner"] {border-bottom:1px solid #ccc;position:fixed;width:100%;padding: 1em 0 0;margin-bottom: 1em;background: url('../images/pattern.png') 0 repeat;}
+[role="banner"] {
+  border-bottom:1px solid #ccc;
+  position:fixed;
+  width:100%;
+  padding: 1em 0 0;
+  margin-bottom: 1em;
+  background: url('../images/pattern.png') 0 repeat;
+}
 
-#hoverlay[role="banner"].active {-webkit-box-shadow:0 1px 12px rgba(0,0,0,0.5);-moz-box-shadow:0 1px 12px rgba(0,0,0,0.3);box-shadow:0 1px 12px rgba(0,0,0,0.3);-webkit-transition: all 0.8s ease;-moz-transition: all 0.8s ease;}
+#hoverlay[role="banner"].active {
+  -webkit-box-shadow:0 1px 12px rgba(0,0,0,0.5);
+  -moz-box-shadow:0 1px 12px rgba(0,0,0,0.3);
+  box-shadow:0 1px 12px rgba(0,0,0,0.3);
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+}
 
 /* Navigation =================================================== */
 [role="navigation"] {
@@ -346,20 +360,44 @@ footer[role="contentinfo"] span#feeds {float: right;}
   }
 
 }
+
 @media only screen and (min-width: 600px) {
   .vh480 {display:block;}
   /* 600 =================================================== */
   ul, ol {margin-left: -24px;}
 }
-@media only screen and (min-width: 768px) {
-  [role="banner"] {background-image: url('../images/nyc-t.jpeg');background-size: auto 100%;}
-  [role="navigation"] a#home {font-size: 3.2rem;line-height: 3.2rem;}
-   #hoverlay[role="banner"].active {-webkit-box-shadow: none;border: none;}
 
-   h1 {font-size: 3.2rem;}
-   h2 {font-size: 2.8rem;}
-   h3 {font-size: 2.2rem;}
-   h4 {font-size: 1.8rem;}
+@media only screen and (min-width: 768px) {
+
+  #hoverlay[role="banner"].active [role="navigation"] {
+    opacity: .1;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+  }
+
+  #hoverlay[role="banner"].active [role="navigation"]:hover {
+    opacity: 1;
+    transition: opacity .6s;
+    -webkit-transition: opacity .6s;
+  }
+
+  [role="banner"] {
+    /* background-image: url('../images/nyc-t.jpeg');
+    background-size: auto 100%; */
+    background: transparent;
+  }
+
+  [role="navigation"] a#home {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+
+  #hoverlay[role="banner"].active {-webkit-box-shadow: none;border: none;}
+
+  h1 {font-size: 3.2rem;}
+  h2 {font-size: 2.8rem;}
+  h3 {font-size: 2.2rem;}
+  h4 {font-size: 1.8rem;}
 
   /* 768 =================================================== */
   .vh600 {display: block;}
@@ -370,7 +408,20 @@ footer[role="contentinfo"] span#feeds {float: right;}
 
   #content {padding-top: 0;}
 
-  [role="banner"] {padding-top:1.95em;display: block;top:0;left:0;bottom:0;left:0;position:fixed;margin-bottom:0;width: 20%;min-height:auto;text-align: right;}
+  [role="banner"] {
+    padding-top:1.95em;
+    display: block;
+    top:0;
+    left:0;
+    bottom:0;
+    left:0;
+    position:fixed;
+    margin-bottom:0;
+    width: 20%;
+    min-height:auto;
+    text-align: right;
+  }
+
   [role="banner"] a[href="#navigation"] { display: none !important;visibility: hidden;}
   [role="navigation"] ul.links li {margin: 0 0 7px;}
   [role="navigation"] ul.links li a {padding-right:15px;color: #777}
