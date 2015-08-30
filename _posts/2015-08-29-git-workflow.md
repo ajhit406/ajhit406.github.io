@@ -68,6 +68,14 @@ This last `git pull --rebase` will get you all new branches. To only pull from m
 
 ![Create PR](/images/pr-create.png)
 
+### Merge the PR on GitHub
+
+Once you and your colleages are happy with the feature branch, you can merge it into your master branch.
+
+You can merge the pull request through GitHub, by clicking the "merge pull request" button at the bottom of the pull request. This will only be available when GitHub predicts there won't be any merge conflicts.
+
+![Merge PR](/images/pr-merge.png)
+
 ### Delete Local Branch:
 
 ```
